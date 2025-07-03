@@ -237,9 +237,39 @@
           </tbody>
           <tfoot>
             <td></td>
-            <td><a href="#enroll">Enroll</a></td>
-            <td><a href="#enroll">Enroll</a></td>
-            <td><a href="#enroll">Enroll</a></td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#enrollModal"
+                data-plan="Basic"
+              >
+                Enroll
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#enrollModal"
+                data-plan="Standard"
+              >
+                Enroll
+              </button>
+            </td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#enrollModal"
+                data-plan="Premium"
+              >
+                Enroll
+              </button>
+            </td>
           </tfoot>
         </table>
       </div>
@@ -575,6 +605,45 @@
 
             <div class="modal-footer">
               <button type="submit" class="btn btn-success">Log In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="enrollModal"
+      tabindex="-1"
+      aria-labelledby="enrollModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="enrollModalForm">
+            <div class="modal-header">
+              <h5 class="modal-title" id="enrollModalLabel">Enroll in Plan</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                You have selected the
+                <strong id="selectedPlanName"></strong> plan.
+              </p>
+              <p>We'll contact you soon!.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </form>
         </div>

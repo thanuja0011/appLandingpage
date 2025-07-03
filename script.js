@@ -29,7 +29,6 @@ $(".formName_input").on("paste", function (e) {
   }
 });
 
-
 // Sign Up Form Validation
 $("#signupForm").on("submit", function (e) {
   e.preventDefault();
@@ -181,7 +180,6 @@ $("#loginModal").on("hidden.bs.modal", function () {
   $("#toggleLoginPassword").removeClass("fa-eye").addClass("fa-eye-slash");
 });
 
-
 // Restrict Mobile to digits only (and max 10 digits)
 $("#mobile").on("input", function () {
   let value = $(this).val().replace(/\D/g, "").slice(0, 10);
@@ -277,6 +275,10 @@ function clearError(selector) {
   $(selector).siblings(".invalid-feedback").hide();
 }
 
+$("#enrollModal").on("show.bs.modal", function (event) {
+  const button = $(event.relatedTarget);
+  const plan = button.data("plan");
+  $("#selectedPlanName").text(plan);
+});
+
 $("#currentYear").text(new Date().getFullYear());
-
-
