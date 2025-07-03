@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar_link">
+    <!-- nav bar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        id="navbar_link"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MyTutor</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars open-icon"></i>
+            <i class="fa-solid fa-xmark close-icon d-none"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#what_we_teach">What We Teach</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#plans">Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tutorForm">Become a Tutor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex" role="search">
+              <button
+                type="button"
+                class="btn btn-secondary signupbtn"
+                data-bs-toggle="modal"
+                data-bs-target="#signupModal"
+              >
+                Sign Up
+              </button>
+              <button
+                type="button"
+                class="btn btn-success ms-4 loginbtn"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Log In
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main description -->
+
+    <section class="jumbotron" id="home">
+      <div class="content">
+        <h1>Online tutoring that releases potential</h1>
+        <p class="lead">
+          we can't stop you worrying about your child. But our expert tutors can
+          help their grades and confidence soar -and help you worry a little
+          less
+        </p>
+      </div>
+    </section>
+
+    <!-- card section -->
+    <section class="cards p-4" id="what_we_teach">
+      <div class="container">
+        <h2 class="mb-4 text-center">What We Teach</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/englishImg.jpeg"
+                class="card-img-top"
+                alt="englishImg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Learn English Easily and Confidently!
+                </h5>
+                <p class="card-text">
+                  Our tutors make learning fun, simple, and interactive.
+                </p>
+                <p class="card-text">
+                  Whether you're a beginner or want to become more advanced, we
+                  have the right course for you.
+                </p>
+                <p class="card-text">
+                  📚 Start your English journey today - learning is just one
+                  step away!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/mathsImg.jpeg"
+                class="card-img-top"
+                alt="mathsImg"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Master Mathematics with Confidence!</h5>
+                <p class="card-text">Do numbers and equations confuse you?</p>
+                <p class="card-text">
+                  Don't worry — we're here to make Math easy and fun! Whether
+                  it's Arithmetic, Algebra, Geometry, Trigonometry, or Calculus,
+                  our expert tutors make learning enjoyable and stress-free.
+                </p>
+                <p class="card-text">
+                  📘 Join our classes and turn Maths into your favorite subject!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/science.jpeg"
+                class="card-img-top"
+                alt="science"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Explore the World of Science - Learn, Discover, Grow!
+                </h5>
+                <p class="card-text">
+                  Science is all around us — and learning it can be exciting and
+                  fun!
+                </p>
+                <p class="card-text">
+                  With the help of visuals, activities, and expert guidance, we
+                  make Science easy to understand and hard to forget!
+                </p>
+                <p class="card-text">
+                  🔬 Start your journey of discovery with us today — because
+                  every great mind begins with a question!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans  -->
+    <section class="pricing p-4 table-responsive-sm" id="plans">
+      <div class="container">
+        <h2 class="mb-4 text-center">Plans</h2>
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Plan</th>
+              <th scope="col">Basic</th>
+              <th scope="col">Standard</th>
+              <th scope="col">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Live Classes</th>
+              <td>2/week</td>
+              <td>4/week</td>
+              <td>6/week</td>
+            </tr>
+            <tr>
+              <th scope="row">Session Time</th>
+              <td>30 mins</td>
+              <td>45 mins</td>
+              <td>1 hour</td>
+            </tr>
+            <tr>
+              <th scope="row">Worksheets</th>
+              <td>Limited</td>
+              <td>Standard</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">1-on-1 Tutor</th>
+              <td class="xmarkIcon"><i class="fa-solid fa-xmark"></i></td>
+              <td class="squareCheckIcon">
+                <i class="fa-solid fa-square-check"></i>(Limited)
+              </td>
+              <td class="squareCheckIcon">
+                <i class="fa-solid fa-square-check"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Recordings Access</th>
+              <td class="xmarkIcon"><i class="fa-solid fa-xmark"></i></td>
+              <td class="squareCheckIcon">
+                <i class="fa-solid fa-square-check"></i>
+              </td>
+              <td class="squareCheckIcon">
+                <i class="fa-solid fa-square-check"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Price</th>
+              <td>₹499/month</td>
+              <td>₹899/month</td>
+              <td>₹1499/month</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td></td>
+            <td><a href="#enroll">Enroll</a></td>
+            <td><a href="#enroll">Enroll</a></td>
+            <td><a href="#enroll">Enroll</a></td>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Become a tutor form -->
+    <section class="p-4" id="tutorForm">
+      <div class="container">
+        <div class="form-container pb-4">
+          <h2 class="mb-4 text-center">Become a Tutor</h2>
+          <form
+            method="POST"
+            class="needs-validation"
+            id="formSubmit"
+            novalidate
+          >
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name *</label>
+              <input
+                type="text"
+                class="form-control formName_input"
+                id="fullName"
+                name="fullName"
+                required
+              />
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address *</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile Number *</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="mobile"
+                name="mobile"
+                pattern="[0-9]{10}"
+                required
+                maxlength="10"
+              />
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <!-- Subject -->
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject *</label>
+              <select class="form-select" id="subject" name="subject" required>
+                <option value="">-- Select Subject --</option>
+                <option value="English">English</option>
+                <option value="Math">Maths</option>
+                <option value="Science">Science</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a subject you can teach.
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-3">
+              <label for="description" class="form-label"
+                >Description / Experience *</label
+              >
+              <textarea
+                class="form-control"
+                id="description"
+                name="description"
+                rows="4"
+                placeholder="Mention your experience, qualifications, etc."
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                Please enter a brief description or experience.
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Apply Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer text-white bg-secondary pt-5 pb-2" id="contactus">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Branding -->
+          <div class="col-md-4 mb-3">
+            <h5>MyTutor</h5>
+            <p>
+              Empowering students through expert tutoring in English, Math, and
+              Science.
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-3">
+            <h6>Contact Us</h6>
+            <p class="mb-1 links">
+              <a href="tel:7799513027"
+                ><i class="fas fa-phone-alt me-2"></i> +91 7799513027</a
+              >
+            </p>
+            <p class="mb-1 links">
+              <a href="mailto:support@mytutor.com">
+                <i class="fas fa-envelope me-2"></i> support@mytutor.com</a
+              >
+            </p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> India</p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-4 mb-3">
+            <h6>Quick Links</h6>
+            <a href="#" class="d-block text-white mb-1">Home</a>
+            <a href="#what_we_teach" class="d-block text-white mb-1"
+              >What We Teach</a
+            >
+            <a href="#plans" class="d-block text-white mb-1">Plans</a>
+            <a href="#tutorForm" class="d-block text-white">Become a Tutor</a>
+          </div>
+        </div>
+
+        <!-- Social & Copyright -->
+        <hr class="border-light" />
+        <div class="text-center">
+          <div class="mb-2">
+            <a href="https://www.facebook.com/" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="text-white me-3"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://x.com/?lang=en-in" class="text-white me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.linkedin.com/" class="text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <p class="mb-0 small">
+            &copy; <span id="currentYear"></span> MyTutor. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Signup Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <form id="signupForm" class="modal-content needs-validation" novalidate>
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label for="signupName" class="form-label">Full Name *</label>
+              <input
+                type="text"
+                class="form-control formName_input"
+                id="signupName"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter your full name (letters and spaces only).
+              </div>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="mb-3">
+              <label for="signupDob" class="form-label">Date of Birth *</label>
+              <input type="date" class="form-control" id="signupDob" required />
+              <div class="invalid-feedback">
+                Please enter your date of birth.
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email *</label>
+              <input
+                type="email"
+                class="form-control"
+                id="signupEmail"
+                required
+              />
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password *</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signupPassword"
+                  required
+                />
+                <span class="input-group-text">
+                  <i
+                    class="fa-solid fa-eye-slash"
+                    id="toggleSignupPassword"
+                    style="cursor: pointer"
+                  ></i>
+                </span>
+              </div>
+              <div class="invalid-feedback">
+                Password must be at least 6 characters.
+              </div>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-3">
+              <label for="signupConfirmPassword" class="form-label"
+                >Confirm Password *</label
+              >
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="signupConfirmPassword"
+                  required
+                />
+                <span class="input-group-text">
+                  <i
+                    class="fa-solid fa-eye-slash"
+                    id="toggleSignupConfirmPassword"
+                    style="cursor: pointer"
+                  ></i>
+                </span>
+              </div>
+              <div class="invalid-feedback">Passwords do not match.</div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form id="loginForm" novalidate>
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <!-- Email Field -->
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <!-- Password Field with Eye Icon -->
+              <div class="mb-3 position-relative">
+                <label for="loginPassword" class="form-label">Password</label>
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="loginPassword"
+                    required
+                  />
+                  <span class="input-group-text">
+                    <i
+                      class="fa-solid fa-eye-slash"
+                      id="toggleLoginPassword"
+                      style="cursor: pointer"
+                    ></i>
+                  </span>
+                </div>
+                <div class="invalid-feedback">
+                  Password must be at least 6 characters.
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success">Log In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

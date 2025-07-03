@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #f8f2ed !important;
+}
+
+.navbar-toggler i {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/onlinetutorjumbotronpic.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  color: #fff;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signupbtn {
+  background-color: #f0e7de;
+  color: #000;
+  border: none;
+}
+
+.loginbtn {
+  background-color: #00d2be;
+  color: #000;
+  border: none;
+}
+
+.cards {
+  background-color: antiquewhite;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+#plans {
+  background-color: darkseagreen;
+}
+.xmarkIcon i {
+  color: red;
+}
+
+.squareCheckIcon i {
+  color: green;
+}
+
+#tutorForm {
+  background-color: lightblue;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+}
